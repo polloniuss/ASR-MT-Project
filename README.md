@@ -22,7 +22,7 @@ I used the Ukrainian dataset from Mozilla Common Voice (version Common Voice Cor
 Inside `w2v_model.py` please change the third parameter of line [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) to your path to folder containing .wav files from Mozilla Common Voice Corpus.
 
 ### Process train, test or validation datasets:
-https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133
+
 - Lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) and [137](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L137) are used for `train` dataset.
 - Lines [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L134) and [138](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L138) are used for `test` dataset.
 - Lines [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) and [139](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L139) are used for `val` dataset.
