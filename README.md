@@ -15,24 +15,27 @@ pip install torch==1.9.1 torchaudio==0.9.1 pyctcdecode==0.3.0
 ### Download dataset:
 I used the Ukrainian dataset from Mozilla Common Voice (version Common Voice Corpus 8.0) that can be found [here]( https://commonvoice.mozilla.org/en/datasets). I converted it into`.wav` files.
 
+# ⚠️ Important Note
 
-Inside `w2v_model.py` please change the third parameter of line [126](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L126) to your path to folder containing .wav files from Mozilla Common Voice Corpus.
+## README has not yet been updated to the most recent code
+
+Inside `w2v_model.py` please change the third parameter of line [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) to your path to folder containing .wav files from Mozilla Common Voice Corpus.
 
 ### Process train, test or validation datasets:
+https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133
+- Lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) and [137](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L137) are used for `train` dataset.
+- Lines [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L134) and [138](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L138) are used for `test` dataset.
+- Lines [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) and [139](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L139) are used for `val` dataset.
 
-- Lines [122](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L122) and [126](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L126) are used for `train` dataset.
-- Lines [123](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L123) and [127](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L127) are used for `test` dataset.
-- Lines [124](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L124) and [128](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L128) are used for `val` dataset.
 
+In order to process train, test or validation dataset, please comment and uncomment lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133), [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) or [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) according to your wishes.
 
-In order to process train, test or validation dataset, please comment and uncomment lines [122](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L122), [123](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L123) or [124](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L124) according to your wishes.
-
-Update your path to dataset in lines [126](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L126), [127](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L127) and [128](https://github.com/polloniuss/ASR-MT-project/blob/5d00c8df1384bceee7d055459847cab509c52cee/wav2vec/w2v_model.py#L128).
+Update your path to dataset in lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133), [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L134) and [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135).
 
 
 #### For example if you want to process `test` dataset:
 
-Uncomment lines 123 and 127, change the path in the third parameters or lines 127 and comment lines 122, 124, 126 and 128.
+Uncomment lines 133 and 137, change the path in the third parameters and comment lines 134, 135, 138 and 139.
 
 ### Run Wav2Vec:
 From wav2vec folder, run `python w2v_model.py`.
