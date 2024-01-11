@@ -1,0 +1,72 @@
+Line 1 -- greedy search, Line 2 -- beam search (default LM), Line 3 -- beam search (custom LM).
+The beam search decoding was performed with beam_width=200 for both LMs.
+
+про це повідомляє през служба поліції київської області
+про це повідомляє пре служба поліції київської області
+про це повідомляє пре служба поліції київської області
+The beam search decoding didn't fix the greedy-search mistake, but only introduced a new one to replace it.
+
+зібрані дані застосовувалися поперше для гернерування адресної розсилки
+зібрані дані застосовувалися по перше для гернерування адресної розсилки
+зібрані дані застосовувалися по перше для гернерування адресної розсилки
+Here, the beam search didn't correct the spelling of the first word entirely, but it's closer to the proper spelling because it should be hyphened. This can be fixed by creating a new LM with the hyphened words -- it seems that right now the LM lexicon file misses such information.
+
+хто розлягається огокворогого котрого втемрі віно не помітили
+хто розлягається гокворогого котрого в темряві у не помітили
+хто розлягається гокворогого котрого в темряві у не помітили
+While two mistakes weren't corrected, there is a small improvement for the second mistake with the beam search.
+
+буває професійні помічники домовляються з домовласником напавно ціну за квартиру
+буває професійні помічники домовляються з домовласником напавно ціну за квартиру
+буває професійні помічники домовляються з домовласником напавно ціну за квартиру
+No improvements from the beam search on this transcription.
+
+перестаралося з корекцію вилиць
+перестаралася з корекцією вилиць
+перестаралася з корекцією вилиць
+The mistake (wrong gender-specific ending of the verb) is corrected by the beam search.
+
+про це свічить її зваложена й доглянута шкіра
+про це свідчить її зволожена й доглянута шкіра
+про це свідчить її зволожена й доглянута шкіра
+Both mistakes are corrected by the beam search.
+
+сім'ї зінвалідами іншим пільговиками постійно потребуватимуть комплексної державної підтримки
+сім'ї з інвалідами іншими пільговиками постійно потребуватимуть комплексної державної підтримки
+сім'ї з інвалідами іншими пільговиками постійно потребуватимуть комплексної державної підтримки
+Both mistakes are corrected by the beam search. However, it seems that all three transcripts miss the conjunction 'й' (and) between the words 3 and 4.
+
+антибіотикорезистентний
+антибіотикорезистентний
+антибіотикорезистентний
+No mistakes were made by any of the decoding methods.
+
+антианемічний
+антианемічний
+антианемічний
+No mistakes were made by any of the decoding methods.
+
+до переваг цього методу належить простотатехнологічних схем і можливість творення замкнутих циклів
+до переваг цього методу належить простота технологічних схем і можливість створення замкнутих циклів
+до переваг цього методу належить простота технологічних схем і можливість створення замкнутих циклів
+Both mistakes are corrected by the beam search.
+
+еч сіймач фегра і захистив титул
+едж свій мачфегра і захистив титул
+едж свій меч фегра і захистив титул
+While the most important error wasn't fixed by the beam search (there's no such words as 'фегра' / 'мачфегра', and the audio should have been transcribed as 'матч виграв' (won the match)), it still managed to at least get the first two words right.
+
+зверніть увагу жодної державністі московської не пахне
+зверніть увагу жодної державністі московською не пахне
+зверніть увагу жодної державністі московською не пахне
+Here, the endings of three words are incorrect (wrong case), and the beam search made the right agreement only in the third word (the mistake persists in the first two though).
+
+між частинами озброєним рушницями виблискували на сонці косарі і відділи озброєні косами
+між частинами озброєними рушницями виблискували на сонці косарі відділи озброєні косами
+між частинами озброєними рушницями виблискували на сонці косарі відділи озброєні косами
+The beam search removed the conjunction 'i', which mistakenly appeared in the transcript.
+
+рельєв хрепта сильно розчавлений вусчьовій зоні вирівнюється до переферій за рахунок поховання осить
+рельєф хребта сильно розчавлений в осьовій зоні вирівнюється до переферій за рахунок поховання осить
+рельєф хребта сильно розчавлений в осьовій зоні вирівнюється до переферій за рахунок поховання осить
+Here, the greedy search made multople mistakes -- and three of them were corrected by the beam search -- ranging from misspelled words (orthographic mistakes) to misheards.
