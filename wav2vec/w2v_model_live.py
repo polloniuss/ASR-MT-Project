@@ -27,9 +27,6 @@ from torch.utils.mobile_optimizer import optimize_for_mobile
 #from pyctcdecode import build_ctcdecoder
 #import multiprocessing
 
-#access_token = "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"
-#!export HF_DATASETS_CACHE="/media/berenice/Healthy_Windows/Users/berenice/Documents/Storage/work/mission/wav2vec_model_storage"
-
 def get_dataset(data, name):
     """Gets and returns filename and sentences from a dataset.
     
