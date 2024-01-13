@@ -19,15 +19,15 @@ I used the Ukrainian dataset from Mozilla Common Voice (version Common Voice Cor
 
 The "wav2vec" folder contains essential scripts and files related to the Wav2Vec2 model for Automatic Speech Recognition (ASR) and Machine Translation (MT). Here's an overview of the contents:
 
-### 1. w2v_model_live.py
+### 1. [w2v_model_live.py](https://github.com/polloniuss/ASR-MT-Project/blob/main/wav2vec/w2v_model_live.py)
    - This script utilizes the Wav2Vec2 model for ASR and MT on medical conversations.
    - Focuses on processing a given dataset, quantizing the model, and producing a CSV file with audio filenames and transcriptions.
 
-### 2. compression_model.ipynb
+### 2. [compression_model.ipynb](https://github.com/polloniuss/ASR-MT-Project/blob/main/wav2vec/compression_model.ipynb)
    - Provides code for compressing the Wav2Vec2 model.
    - Exports and quantizes the Wav2Vec2 model, comparing sizes between the original and quantized versions.
 
-### 3. cleaning_and_analysis.ipynb
+### 3. [classification_translations.ipynb](https://github.com/polloniuss/ASR-MT-Project/blob/main/wav2vec/classification_translations.ipynb)
    - This notebook includes extensive work on cleaning the dataset and analyzing errors.
    - Defines functions to identify different types of errors in model transcriptions.
    - Compares performance across different Wav2Vec2 models and provides detailed statistics on errors.
