@@ -15,31 +15,26 @@ pip install torch==1.9.1 torchaudio==0.9.1 pyctcdecode==0.3.0
 ### Download dataset:
 I used the Ukrainian dataset from Mozilla Common Voice (version Common Voice Corpus 8.0) that can be found [here]( https://commonvoice.mozilla.org/en/datasets). I converted it into`.wav` files.
 
-# ⚠️ Important Note
+## Wav2Vec Folder
 
-## README has not yet been updated to the most recent code
+The "wav2vec" folder contains essential scripts and files related to the Wav2Vec2 model for Automatic Speech Recognition (ASR) and Machine Translation (MT). Here's an overview of the contents:
 
-Inside `w2v_model.py` please change the third parameter of line [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) to your path to folder containing .wav files from Mozilla Common Voice Corpus.
+### 1. w2v_model_live.py
+   - This script utilizes the Wav2Vec2 model for ASR and MT on medical conversations.
+   - Focuses on processing a given dataset, quantizing the model, and producing a CSV file with audio filenames and transcriptions.
 
-### Process train, test or validation datasets:
+### 2. compression_model.ipynb
+   - Provides code for compressing the Wav2Vec2 model.
+   - Exports and quantizes the Wav2Vec2 model, comparing sizes between the original and quantized versions.
 
-- Lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133) and [137](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L137) are used for `train` dataset.
-- Lines [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L134) and [138](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L138) are used for `test` dataset.
-- Lines [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) and [139](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L139) are used for `val` dataset.
+### 3. cleaning_and_analysis.ipynb
+   - This notebook includes extensive work on cleaning the dataset and analyzing errors.
+   - Defines functions to identify different types of errors in model transcriptions.
+   - Compares performance across different Wav2Vec2 models and provides detailed statistics on errors.
+   - Generates visualizations for demographic and voting information related to the dataset.
 
-
-In order to process train, test or validation dataset, please comment and uncomment lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133), [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) or [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135) according to your wishes.
-
-Update your path to dataset in lines [133](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L133), [134](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L134) and [135](https://github.com/polloniuss/ASR-MT-project/blob/dc672f024b8fdcf36e7ab056e00c91f200b09973/wav2vec/previous_code/w2v_model.py#L135).
-
-
-#### For example if you want to process `test` dataset:
-
-Uncomment lines 133 and 137, change the path in the third parameters and comment lines 134, 135, 138 and 139.
-
-### Run Wav2Vec:
-From wav2vec folder, run `python w2v_model.py`.
-
+#### Important Note:
+All three files collectively contribute to the transcription and analysis workflow, showcasing the usage, compression, and detailed error analysis of the Wav2Vec2 model.
 
 ## To do list:
 - commands / how to reproduce steps / how to compute code
