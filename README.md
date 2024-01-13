@@ -15,7 +15,7 @@ pip install torch==1.9.1 torchaudio==0.9.1 pyctcdecode==0.3.0
 ### Download dataset:
 I used the Ukrainian dataset from Mozilla Common Voice (version Common Voice Corpus 8.0) that can be found [here]( https://commonvoice.mozilla.org/en/datasets). I converted it into`.wav` files.
 
-## Wav2Vec Folder
+## [Wav2Vec](https://github.com/polloniuss/ASR-MT-Project/tree/main/wav2vec) Folder
 
 The "wav2vec" folder contains essential scripts and files related to the Wav2Vec2 model for Automatic Speech Recognition (ASR) and Machine Translation (MT). Here's an overview of the contents:
 
